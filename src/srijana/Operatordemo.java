@@ -40,8 +40,12 @@ public class Operatordemo {
                 else {
                     System.out.println("hello mr");
                 }
-                System.out.println(gender=='F'?"hello miss" + name: "hello mr");    
-                
+                System.out.println(gender=='F'?"hello miss " + name: "hello mr");
+    
+    
+          for(int i=0;i<10;i+=2){
+              System.out.println(i);
+          }      
                 
     }
 }
