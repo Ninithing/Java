@@ -20,5 +20,28 @@ public class Operatordemo {
 //        int a=18;
 //        int b=27;
         int max=a>b? a:b;
+        int time=5;
+                if (time<12){
+                    System.out.println("good morning");
+                }else if (time>16){
+                            System.out.println("good afternoon");
+                }else{
+                    System.out.println("good evening");
+                    
+                  
+                  
+                }
+                
+                String name= ("Nini");
+                char gender=('F');
+                if (gender=='F'){
+                    System.out.println("hello miss "+ name);
+                }
+                else {
+                    System.out.println("hello mr");
+                }
+                System.out.println(gender=='F'?"hello miss" + name: "hello mr");    
+                
+                
     }
 }
