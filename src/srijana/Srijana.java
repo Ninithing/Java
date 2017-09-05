@@ -42,8 +42,10 @@ public class Srijana {
         double tax= taxPercentage*balance;
                 
         System.out.println("Your total balance is "+(balance)+ " with "+ (due)+ " you have paid Rs "+tax) ;
+    }
         int age1=27;
-        int a= age1++;
+        int age1=(age1)++;
+        System.out.println(age);
         
         
         

@@ -45,7 +45,17 @@ public class Operatordemo {
     
           for(int i=0;i<10;i+=2){
               System.out.println(i);
-          }      
+              
+              
+              
+          } 
+          
+          for(int j=1; j<10;j++) {
+                  for (int i= 1; i<10;i++){
+                      System.out.println(j+" * "+ i +"="+i*j+"\t");
+                  }
+                  System.out.println("");
+           }
                 
     }
 }
