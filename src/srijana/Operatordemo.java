@@ -57,5 +57,44 @@ public class Operatordemo {
                   System.out.println("");
            }
                 
+                
+             int i=0;
+             while (i<=100){
+                 System.out.println(i);
+             i++;
+             }
+             
+             
+             
+             
+           int x=getMax(45,67);
+           int y=getMax(12,767);
+           System.out.println(x+","+y);
+           
+        int xp=getSum(2,3,4,878,878);
+        System.out.println(xp);
+           
     }
+    public static int getMax(int a,int b){
+        int max=a>b?a:b;
+        return max;
+        
+        
+    }
+    public static int getSum(int a,int b, int c){
+        int sum=a+b+c;
+        return sum;
+    }
+       
+   
+     public static int getSum(int...nums){
+        int sum=0;
+        for (int i:nums){
+            sum+=i;
+
+        }
+        return sum;
+         
+     }
+     
 }
