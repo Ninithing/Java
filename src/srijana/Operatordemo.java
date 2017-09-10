@@ -76,6 +76,10 @@ public class Operatordemo {
         
         int xy=getAverage(10,12,14,16);
         System.out.println(xy);
+        
+        
+        int yx=getFactorial(10);
+        System.out.println(yx);
            
     }
     public static int getMax(int a,int b){
@@ -106,4 +110,18 @@ public class Operatordemo {
             return sum/length;   
      }
      
+     public static boolean isEven(int a){
+         boolean even=a%2==0?true:false;
+         
+         return even;
+     }
+     public static int getFactorial(int a){
+         int f=1;
+         for(int i=a;i>=1;i--){
+             f=f*i;
+         }
+         return f;
+         
+    }   
+         
 }
