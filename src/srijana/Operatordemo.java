@@ -73,6 +73,9 @@ public class Operatordemo {
            
         int xp=getSum(2,3,4,878,878);
         System.out.println(xp);
+        
+        int xy=getAverage(10,12,14,16);
+        System.out.println(xy);
            
     }
     public static int getMax(int a,int b){
@@ -87,7 +90,7 @@ public class Operatordemo {
     }
        
    
-     public static int getSum(int...nums){
+     public static int getSum(int... nums){
         int sum=0;
         for (int i:nums){
             sum+=i;
@@ -95,6 +98,12 @@ public class Operatordemo {
         }
         return sum;
          
+     }
+     public static int getAverage(int... nums){
+         int sum= getSum(nums);
+         int length=nums.length;
+         
+            return sum/length;   
      }
      
 }
