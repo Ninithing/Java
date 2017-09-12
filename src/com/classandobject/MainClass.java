@@ -13,12 +13,15 @@ public class MainClass {
     public static void main(String args[]){
         Person p=new Person();
 //        p.name="Srijana Thing";
-p.setName("Sr");
-        p.address="Gongabu";
-        p.gender='F';
-        p.age=18;
-       p.getInfo();
+        p.setName("Srijana");
+        p.setAddress("Gongabu");
+        p.setGender('F');
+        p.setAge(22);
+        
+//       p.getInfo();
+        System.out.println(p.getName());
         p.move();
+        p.greet("sanju");
         
         
         

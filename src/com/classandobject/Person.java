@@ -5,6 +5,8 @@
  */
 package com.classandobject;
 
+import java.time.LocalTime;
+
 /**
  *
  * @author NCC
@@ -12,9 +14,9 @@ package com.classandobject;
 public class Person {
  
    private String name;
-    String address;
-    int age;
-    char gender;
+   private String address;
+   private int age;
+   private char gender;
     
     public void setName(String n){
         if( n.length()<5 || n.length()>20){
@@ -23,6 +25,57 @@ public class Person {
         }else {
             name =n;
         }
+    }
+    public void setAge(int a){
+        if (a<14 || a>50){
+            System.out.println("sorry");
+
+        }else{
+            age=a;
+        }
+    }
+    public void setGender(char g){
+    if (g=='M'|| g=='m'|| g=='F' || g== 'f'){
+        gender=g;
+    }
+    }
+
+    public void setAddress(String a){
+        if(a.length()<6|| a.length()>15){
+         System.out.println("this is invalid");
+        
+        }else{
+        address=a;
+        }
+        
+    }
+    public String getName(){
+            return name;
+            
+    }
+    public String getAddress(){
+   return address; 
+   }
+    public char getGender(){
+    return gender;
+    }
+    public void greet(String s){
+        LocalTime t= LocalTime.now();
+        String time="";
+        if (t.getHour()<=12) {
+        time="good morning ";
+        
+        }else if( t.getHour()<= 17){
+            time="good afternoon ";
+
+
+        }else{
+        time="good night ";
+        }
+        System.out.println(time+s+" I am "+getName()+" tha time is "+t);
+            
+             
+        
     }
     public void getInfo(){
          System.out.println("name:"+name+"\n address:"+address+"\n grnder:"+gender+"\n age:"+age);
