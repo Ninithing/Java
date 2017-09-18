@@ -57,5 +57,71 @@ public class Operatordemo {
                   System.out.println("");
            }
                 
+                
+             int i=0;
+             while (i<=100){
+                 System.out.println(i);
+             i++;
+             }
+             
+             
+             
+             
+           int x=getMax(45,67);
+           int y=getMax(12,767);
+           System.out.println(x+","+y);
+           
+        int xp=getSum(2,3,4,878,878);
+        System.out.println(xp);
+        
+        int xy=getAverage(10,12,14,16);
+        System.out.println(xy);
+        
+        
+        int yx=getFactorial(10);
+        System.out.println(yx);
+           
     }
+    public static int getMax(int a,int b){
+        int max=a>b?a:b;
+        return max;
+        
+        
+    }
+    public static int getSum(int a,int b, int c){
+        int sum=a+b+c;
+        return sum;
+    }
+       
+   
+     public static int getSum(int... nums){
+        int sum=0;
+        for (int i:nums){
+            sum+=i;
+
+        }
+        return sum;
+         
+     }
+     public static int getAverage(int... nums){
+         int sum= getSum(nums);
+         int length=nums.length;
+         
+            return sum/length;   
+     }
+     
+     public static boolean isEven(int a){
+         boolean even=a%2==0?true:false;
+         
+         return even;
+     }
+     public static int getFactorial(int a){
+         int f=1;
+         for(int i=a;i>=1;i--){
+             f=f*i;
+         }
+         return f;
+         
+    }   
+         
 }
